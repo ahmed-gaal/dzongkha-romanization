@@ -1,8 +1,6 @@
-
 mapping = (
     u"ཀཁགངཅཆཇཉཏཐདནཔཕབམཙཚཛཝཞཟའཡརལཤསཧཨ་", u"kakhagangachachhajanyatathadanapaphabamatsatshadzawazhazazyaralashasahaa-"
 )
-
 pre_processor_mapping = {
     u"ཀ": u"ka",
     u"ཁ": u"kha",
@@ -36,9 +34,27 @@ pre_processor_mapping = {
     u"ཨ": u"a",
     u"་": u"-",
     u"།": u".",
+    #Vowels
+    u"ཨ": u"a",
+    u"ཨད": u"ay",
+    u"ཨན": u"ay",
+    u"ཨའ": u"ay",
+    u"ཨས": u"ay",
+    u"ེ": u"e",
+    u"ི": u"i",
+    u"ུ": u"u",
+    u"ུད": u"ue",
+    u"ུན": u"ue",
+    u"ུའ": u"ue",
+    u"ུས": u"ue",
+    u"ོ": u"o",
+    u"ོད": u"oe",
+    u"ོན": u"oe",
+    u"ོའ": u"oe",
+    u"ོས": u"oe",
     # Dzongkha numerals
     u"༠": u"legkor",
-    u"༡	": u"chi",
+    u"༡": u"chi",
     u"༢": u"nyi",
     u"༣": u"sum",
     u"༤": u"zhi",
