@@ -1,6 +1,6 @@
-
-
-#import transliterate
+"""
+Perform text romanization
+"""
 from src import dzongkha_pack
 import pandas as pd
 from transliterate import translit
