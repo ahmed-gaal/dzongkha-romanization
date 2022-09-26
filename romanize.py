@@ -1,11 +1,13 @@
 """
 Perform text romanization
 """
-from src import dzongkha_pack
 import pandas as pd
+from datetime import datetime, timezone
+from src import dzongkha_pack
 from transliterate import translit
 
-
+# Today's date
+today = datetime.now(timezone.utc).strftime("%Y:%m:%d:%H:%M:%S")
 
 # Load DDC parallel corpus
 df = pd.read_csv('data/ddc.csv')
@@ -35,4 +37,4 @@ def romanize_text(col: str, reverse: bool):
 df['romanized'] = romanize_text('dzongkha', reverse=False)
 df['reversed'] = romanize_text('romanized', reverse=True)
 
-df.to_csv('data/romanized_corpus.csv', index=None)
+df.to_csv('data/' + str(today) + 'romanized_corpus.csv', index=None)
