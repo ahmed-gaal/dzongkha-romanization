@@ -2,6 +2,7 @@ mapping = (
     u"ཀཁགངཅཆཇཉཏཐདནཔཕབམཙཚཛཝཞཟའཡརལཤསཧཨ་", u"kakhagangachachhajanyatathadanapaphabamatsatshadzawazhazazyaralashasahaa-"
 )
 pre_processor_mapping = {
+    # Dzongkha Consonants
     u"ཀ": u"ka",
     u"ཁ": u"kha",
     u"ག": u"ga",
@@ -34,7 +35,9 @@ pre_processor_mapping = {
     u"ཨ": u"a",
     u"་": u"-",
     u"།": u".",
-    #Vowels
+    u"ྱ": u"ya",
+    u'ྭ': u"wa",
+    # Vowels
     u"ཨ": u"a",
     u"ཨད": u"ay",
     u"ཨན": u"ay",
@@ -82,5 +85,5 @@ pre_processor_mapping = {
     u"༢༦": u"nyer dru",
     u"༢༧": u"nyer duen",
     u"༢༨": u"nyer gay",
-    u"༢༩": u"nyer gu"
+    u"༢༩": u"nyer gu",
 }
