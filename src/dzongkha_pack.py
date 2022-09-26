@@ -28,7 +28,8 @@ class DzongkhaLanguagePack(TranslitLanguagePack):
     # Set character ranges
     character_ranges = ((0X0F00, 0X0FFF))
 
-
+# Register new language pack 
 registry.register(DzongkhaLanguagePack)
 
+# Verify presence of new language pack
 print(get_available_language_codes())
