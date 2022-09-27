@@ -37,4 +37,4 @@ def romanize_text(col: str, reverse: bool):
 df['romanized'] = romanize_text('dzongkha', reverse=False)
 df['reversed'] = romanize_text('romanized', reverse=True)
 
-df.to_csv('data/' + str(today) + 'romanized_corpus.csv', index=None)
+df.to_csv('data/' + str(today) + ' romanized_corpus.csv', index=None)
