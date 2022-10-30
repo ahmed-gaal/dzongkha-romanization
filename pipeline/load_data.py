@@ -28,6 +28,9 @@ df = pd.read_csv(str(Params.original))
 # Set column names for the data
 df.columns = ['english', 'dzongkha']
 
+# Remove spaces in dzongkha sentences
+df['dzongkha'] = df['dzongkha'].replace(" ", "")
+
 # Split our data to train and test sets
 df_train, df_test = train_test_split(
     df, test_size=0.1, shuffle=True, random_state=ran_s
