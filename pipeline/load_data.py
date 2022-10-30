@@ -18,7 +18,7 @@ Params.data.mkdir(parents=True, exist_ok=True)
 
 # Extract data from remote source
 gdown.download(
-    os.environ,get("DATA"),
+    os.environ.get("DATA"),
     str(Params.original)
 )
 
